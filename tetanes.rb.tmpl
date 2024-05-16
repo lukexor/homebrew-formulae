@@ -3,10 +3,10 @@ cask "TetaNES" do
   homepage "https://github.com/lukexor/tetanes"
   version "%VERSION%"
   if Hardware::CPU.intel?
-    url "https://github.com/lukexor/tetanes/releases/download/v#{version}/tetanes-x86_64-apple.tar.gz"
+    url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-x86_64-apple.tar.gz"
     sha256 "%x86_64_SHA%"
   else
-    url "https://github.com/lukexor/tetanes/releases/download/v#{version}/tetanes-aarch64-apple.tar.gz"
+    url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-aarch64-apple.tar.gz"
     sha256 "%aarch64_SHA%"
   end
   license "MIT"
