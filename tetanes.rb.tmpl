@@ -5,18 +5,18 @@ cask "tetanes" do
 
   on_arm do
     sha256 "%aarch64_SHA%"
-
     url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-#{version}-aarch64-apple.tar.gz"
   end
   on_intel do
     sha256 "%x86_64_SHA%"
-
     url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-#{version}-x86_64-apple.tar.gz"
   end
 
   name "TetaNES"
   desc "Cross-platform NES emulator written in Rust using wgpu"
   homepage "https://github.com/lukexor/tetanes"
+
+  depends_on :macos
 
   app "TetaNES.app"
 end
