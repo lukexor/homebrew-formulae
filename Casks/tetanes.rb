@@ -18,5 +18,7 @@ cask "tetanes" do
   desc "Cross-platform NES emulator written in Rust using wgpu"
   homepage "https://github.com/lukexor/tetanes"
 
+  depends_on :macos
+
   app "TetaNES.app"
 end
