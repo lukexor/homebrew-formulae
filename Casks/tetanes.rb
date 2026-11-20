@@ -1,15 +1,15 @@
 cask "tetanes" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.17.0"
+  version "0.18.0"
 
   on_arm do
-    sha256 "7ae9645bdaf7374416fb94fcbf08188e02fa45445375b21a49d017759cac161d"
+    sha256 "188d2f26446e7c3d3462e5a95edbe157925d7422a6d9489545f5e91c3de15097"
 
     url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-#{version}-aarch64-apple.tar.gz"
   end
   on_intel do
-    sha256 "ab4ab568b2e04e29a09bc3069afbcdabdc16db6a01618d7e72e2b5b183433c19"
+    sha256 "777fdb64e366dace5039a5d9962e486a021ce0a48d167323a47b0305f1bbc9f4"
 
     url "https://github.com/lukexor/tetanes/releases/download/tetanes-v#{version}/tetanes-#{version}-x86_64-apple.tar.gz"
   end
